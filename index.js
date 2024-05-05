@@ -52,7 +52,7 @@ app.post("/login",async(req,res)=>{
 
 // Crud api part
 
-// app.use(authenticate)
+app.use(authenticate)
 
 app.get("/blog",async (req,res)=>{
 const data=await BlogModel.find(req.query)
