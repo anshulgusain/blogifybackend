@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start":"node index.js",
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/anshulgusain/blogifybackend/issues"
   },
-  "homepage": "https://github.com/anshulgusain/blogifybackend#readme"
+  "homepage": "https://github.com/anshulgusain/blogifybackend#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
 }
