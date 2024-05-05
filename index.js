@@ -1,4 +1,4 @@
-const express=require("express")
+const express=require('express')
 const connection=require("./connection/connect")
 const bcrypt = require('bcrypt');
 const { UserModel } = require("./models/UserModel");
