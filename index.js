@@ -103,7 +103,7 @@ app.delete("/blog/:id",async (req,res)=>{
     console.log(id)
    try{
       if(id===userid){
-  await BlogModel.findByIdAndDelete(id)
+  await BlogModel.findByIdAndDelete(userid)
   res.send("Deleted Succesfully")
   
       }else{
