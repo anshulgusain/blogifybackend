@@ -98,7 +98,7 @@ res.send("Edited Succesfully")
 app.delete("/blog/:id",async (req,res)=>{
     const {id}=req.params
     
-    const userid=req._id
+    const userid=req
     console.log(userid)
     console.log(id)
    try{
