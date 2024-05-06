@@ -62,8 +62,8 @@ const data=await BlogModel.find(req.query)
 
 app.post("/blog/add",async (req,res)=>{
     const {title,image,author,blog}=req.body
-    const userid=req.userid
-    console.log(userid)
+    // const userid=req.userid
+    // console.log(userid)
     try{
 await BlogModel.create({title,image,author,blog,userid})
 res.send("Blog Created Sucessfully")
