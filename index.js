@@ -76,7 +76,7 @@ res.send("Blog Created Sucessfully")
 
 app.put("/blog/edit/:id",async (req,res)=>{
   const {id}=req.params
-  const userid=req.userid
+  const userid=req.params.id
  const {title,image,author,blog}=req.body
 //  console.log(status)
  try{
