@@ -98,12 +98,12 @@ res.send("Edited Succesfully")
 app.delete("/blog/:id",async (req,res)=>{
     const {id}=req.params
     
-    const userid=req.userid
+    const userid=req._id
     console.log(userid)
     console.log(id)
    try{
       if(id===userid){
-  await BlogModel.findByIdAndDelete(userid)
+  await BlogModel.findByIdAndDelete(id)
   res.send("Deleted Succesfully")
   
       }else{
